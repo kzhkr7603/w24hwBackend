@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/Activity")
 @CrossOrigin(origins = ["https://guryongpofutsal.netlify.app/"])
 class ActivityController(private val service: ActivityService) {
     @PostMapping
