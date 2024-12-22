@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/Activity")
-@CrossOrigin(origins = ["http://localhost:3000"])
+@CrossOrigin(origins = ["https://guryongpofutsal.netlify.app/"])
 class ActivityController(private val service: ActivityService) {
     @PostMapping
     fun addActivity(@RequestBody activity: Activity): Activity = service.addActivity(activity)
